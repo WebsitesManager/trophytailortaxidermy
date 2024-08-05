@@ -26,9 +26,9 @@
         const urltogoto = 'https://liedraco.pythonanywhere.com'
         toappendto = document.body
         function HandlePassword(password) {
-            fetch(`${urltogoto}/auth`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(password) }).then(response => { return response.text() }).then(CorrectPassword => {
+            fetch(`${urltogoto}/auth`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(password) }).then(response => { return response.json() }).then(CorrectPassword => {
                 if (CorrectPassword) {
-                   window.location.replace(`${urltogoto}/authenticated`)
+                   window.location.replace(`${urltogoto}/taxidermy/authenticated/taxidermy/trophy/com/noncombubble`)
                 }
                 else{
                     document.getElementById('notifier').textContent="incorrect password"
