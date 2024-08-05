@@ -1,0 +1,163 @@
+body {
+    /* background-color: forestgreen; */
+    /* margin: 0; */
+    margin-right: 0;
+    /* position:absolute; */
+    margin-left: 0;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#Daffy {
+    width: 5%;
+    display: inline-block;
+}
+
+#header {
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    /* margin: 1.5%; */
+    margin-top: 0;
+    text-shadow: 1px 1px 5px black;
+    /* margin-bottom: 2.5%; */
+    padding: 0;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    min-width: 100%;
+    /* background-color: red; */
+}
+
+nav {
+    display: flex;
+    background-color: rgb(104, 104, 104);
+    border-color: black;
+    max-width: 98.3vw;
+    margin-bottom: 0%;
+    padding: 0;
+    box-shadow: 1px 4px 3px rgb(73, 73, 73);
+    position: sticky;
+    position: webkit-sticky;
+    min-width: 100%;
+    flex-wrap: wrap;
+    /* max-height: 10vh; */
+}
+
+nav>ul {
+    margin-left: 0;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 50%;
+    max-width: 50%;
+    margin-left: auto;
+    /* background-color: rgb(22, 87, 22); */
+}
+
+nav>ul>* {
+    flex: 1 1 5%;
+    /* Flex-grow, flex-shrink, flex-basis */
+    /* border: 1px solid #000; */
+    /* Optional: To visualize the items */
+    margin: 0px;
+    /* Optional: Spacing between items */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    display: flex;
+    justify-content: flex-end;
+    /* Center the content horizontally */
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+    /* Center the content vertically */
+}
+
+.navbutton {
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 3vw;
+    font-family: 'Arial';
+    font-weight: 100;
+    text-decoration: none;
+    /* color: rgba(0, 0, 0, 0); */
+    text-shadow: 0px 0px 2px black;
+    /* border-right: .1cap solid black; */
+    transition: background-color .3s ease-in-out 1ms;
+    color: forestgreen;
+    font-weight: 100;
+    transition: color .15s ease-in-out 40ms;
+    letter-spacing: .1em;
+    padding-top: .85%;
+
+    /* color: white; */
+}
+
+#greenlist>a:hover {
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(0, 255, 0);
+    text-shadow: 2px 2px 3px black;
+}
+
+#brownlist>a:hover {
+    /* background-color: rgba(112, 64, 27, 0.5); */
+    color: rgb(179, 142, 75);
+}
+
+#Logo {
+    float: left;
+    max-width: 8%;
+    max-height: 100%;
+
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    /* outline:1px black solid; */
+    /* border-radius: 100rem; */
+}
+
+#Daffy {
+    display: flex;
+    border-radius: 50px;
+}
+
+#brownlist>a {
+    color: rgb(126, 93, 43);
+    margin-left: auto;
+}
+
+#brownlist {
+    margin-left: 0;
+    flex-flow: row;
+}
+
+#navtext {
+    color: rgb(78, 194, 24);
+    margin-left: 1.5%;
+    font-size: 1em;
+    position: relative;
+    padding: 0;
+    text-shadow: 1px 1px 3px rgb(37, 114, 21);
+}
+
+footer {
+    background-color: black;
+
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 1%;
+
+    >a {
+        text-decoration: none;
+        color: white;
+        font-size: 2.5em;
+        margin-top: 2%;
+
+    }
+}

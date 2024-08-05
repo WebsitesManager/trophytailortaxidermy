@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+main {
+    /* display: flex;
+    justify-content: center; */
+    padding: 10%;
+    padding-bottom: 25%;
+
+}
+
+iframe {
+    border: .3rem ridge black;
+
+    flex: 1 2 50%;
+}
+
+footer>a {
+    transition: all 2s 1ms ease-in-out;
+    /* transition: all 1s 1ms ease-in-out; */
+}
+
+#call {
+    transition: .3s all 1ms ease-in-out;
+}
+
+
+footer>a>p:hover {
+    font-weight: 900;
+    color: rgb(189, 9, 224);
+    text-shadow: 1px 1px 0 rgb(255, 174, 0);
+    filter: None;
+}
+
+#call:hover {
+    color: blue;
+    text-shadow: 1px 1px 1px white;
+}
+
+
+
+#insta:hover {
+    filter: hue-rotate(360deg);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: white;
+}

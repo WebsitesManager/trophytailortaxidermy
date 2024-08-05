@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Trophy Tailor Taxidermy</title>
+    <link rel="icon" href="Ducky.png">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <img src="Ducky.png" alt="" id="Logo">
+    <nav style="background-color: rgb(26, 25, 25); padding: 0; align-content: center;">
+        <img src="Ducky.png" alt="" id="Daffy" style="margin: 0;">
+        <p id="navtext">Trophy Tailor
+            taxidermy
+        </p>
+
+        <ul id="greenlist">
+            <a href="index.html" class="navbutton">About</a>
+            <a href="Contacts.html" class="navbutton">Contact</a>
+            <a href="Pricing.html" class="navbutton">Pricing</a>
+            <a href="Gallery.html" class="navbutton">Gallery</a>
+        </ul>
+    </nav>
+    <main style="">
+        <h1 style="text-align: left;">Here we are on google maps</h1>
+        <h1 style="color: black; text-align: center; font-family: Arial, Helvetica, sans-serif;">You can find us at:<br>
+            16831 US Highway 50,
+            Rocky Ford, Colorado 81067</h1>
+        <div style="display: flex;flex: 1 1 auto;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.8817766997736!2d-103.77134252497979!3d38.073134294918894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x871211786fddaa0f%3A0x20cb815259f8e317!2sTrophy%20Tailor%20Taxidermy!5e0!3m2!1sen!2sus!4v1722535902831!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                style="margin-left: auto;"></iframe>
+        </div>
+    </main>
+    <footer>
+        <a href="tel:7194683459" style="display: block; margin-bottom: 2%;" id="call"><img src="Telephone.png"
+                alt="phone" id="phonelogo"> Call us at (719) 468-3459</a>
+        <a href="https://www.instagram.com/trophytailortaxidermy/" target="_blank" id="insta">
+            <p style="filter: none; margin:inherit"> Check us out on
+                Instagram!</p>
+            <img src="InstaLogo.png" alt="Instagram" id="Instagramlogoimage"
+                style="max-height: 1%; display: block; margin-left: auto;margin-right: auto;">
+        </a>
+        <h3 style="margin-bottom: 3%;">Trophy Tailor Taxidermy</h2>
+    </footer>
+    <script>
+        document.getElementById('insta').addEventListener('mouseover', () => { setTimeout(() => { document.getElementById('Instagramlogoimage').src = 'hoverlogo.png' }, 50) })
+        document.getElementById('insta').addEventListener('mouseleave', () => { setTimeout(() => { document.getElementById('Instagramlogoimage').src = 'InstaLogo.png' }, 50) })
+        document.getElementById('call').addEventListener('mouseover', () => { setTimeout(() => { document.getElementById('phonelogo').src = 'TelephoneBlue.png' }, 120) })
+        document.getElementById('call').addEventListener('mouseleave', () => { setTimeout(() => { document.getElementById('phonelogo').src = 'Telephone.png' }, 50) })
+    </script>
+</body>
+
+</html>

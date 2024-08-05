@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+
+ol {
+
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+
+li {
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.5em;
+    /* background-color: red; */
+}
+
+#listheader {
+    font-size: 3em;
+    text-align: left;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}

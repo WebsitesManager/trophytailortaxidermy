@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(255, 115, 0);
+    align-items: center;
+    margin-left: 0;
+}
+
+.image {
+    display: inline-flex;
+    height: 40vh;
+    width: 35vh;
+    margin: 2%;
+    border: 12px rgb(41, 28, 4);
+    border-style: double;
+    box-shadow: -4px 1px 6px rgb(0, 0, 0);
+    transition: box-shadow .25s 1ms ease-in-out;
+}
+
+.image:hover {
+    box-shadow: -2px 1px 6px rgb(109, 87, 41);
+}
+
+#spanforstuff {
+    align-content: center;
+    /* background-color: gainsboro; */
+}
