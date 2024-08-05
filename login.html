@@ -27,11 +27,8 @@
         toappendto = document.body
         function HandlePassword(password) {
             fetch(`${urltogoto}/auth`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(password) }).then(response => { return response.text() }).then(CorrectPassword => {
-                console.log(CorrectPassword)
                 if (CorrectPassword) {
-                    document.open();
-                    document.write(CorrectPassword);
-                    document.close();
+                   window.location.replace(`${urltogoto}/authenticated`)
                 }
                 else{
                     document.getElementById('notifier').textContent="incorrect password"
