@@ -6,11 +6,15 @@ fetch(`${fetchurl}/Prices`).then(repsonse => { return repsonse.json() })
         let dictoflengths = {}
         let lengths = []
         if (document.getElementsByTagName('main').length>0){
-            document.getElementsByTagName('main').forEach(element => {
-                element.replaceWith(document.createElement('main'))
-                
-                
-            });
+            const mainelements=document.getElementsByTagName('main')
+            if (document.getElementsByTagName('main').length>0){
+                for (const key in mainelements) {
+                    if (Object.prototype.hasOwnProperty.call(mainelements, key)) {
+                        const element = mainelements[key];
+                        element.replaceWith(document.createElement('main'))
+                    }
+                }
+            }
         }
         for (const key in Prices) {
             let element = Prices[key];
