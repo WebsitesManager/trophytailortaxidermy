@@ -1,4 +1,4 @@
-const ToAppendTo = document.body.getElementsByTagName("main")[0]
+var ToAppendTo = document.body.getElementsByTagName("main")[0]
 const fetchurl = 'https://liedraco.pythonanywhere.com'
 
 fetch(`${fetchurl}/Prices`).then(repsonse => { return repsonse.json() })
@@ -11,7 +11,9 @@ fetch(`${fetchurl}/Prices`).then(repsonse => { return repsonse.json() })
                 for (const key in mainelements) {
                     if (Object.prototype.hasOwnProperty.call(mainelements, key)) {
                         const element = mainelements[key];
-                        element.replaceWith(document.createElement('main'))
+                        emptymain=document.createElement('main')
+                        element.replaceWith(emptymain)
+                        ToAppendTo=emptymain
                     }
                 }
             }
