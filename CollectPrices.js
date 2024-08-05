@@ -5,6 +5,13 @@ fetch(`${fetchurl}/Prices`).then(repsonse => { return repsonse.json() })
     .then(Prices => {
         let dictoflengths = {}
         let lengths = []
+        if (document.getElementsByTagName('main').length>0){
+            document.getElementsByTagName('main').forEach(element => {
+                element.replaceWith(document.createElement('main'))
+                
+                
+            });
+        }
         for (const key in Prices) {
             let element = Prices[key];
             // let newcontainer=document.createElement('div')
